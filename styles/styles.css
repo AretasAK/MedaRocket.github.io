@@ -1,0 +1,276 @@
+/* COLORES PRINCIPALES
+#370665
+#35589A
+#F14A16
+#ec5404
+#FC9918
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Lobster', cursive;
+*/
+
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+
+/* NAVBAR */
+
+
+.navbar {
+    background-color: #370665;
+}
+
+.navbar-after-scroll {
+    position: relative;
+    background: rgb(49, 6, 90);
+    background: linear-gradient(0deg, rgba(49, 6, 90, 1) 25%, rgba(55, 6, 101, 1) 50%, rgba(55, 6, 101, 1) 80%);
+    transition: 1s;
+}
+
+.navbar-after-scroll::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 50px;
+    background-size: 20px 100%;
+    background-image: linear-gradient(135deg, #31065a 25%, transparent 25%), linear-gradient(225deg, #31065a 25%, transparent 25%);
+    background-position: 0 0;
+    transition: 1s;
+}
+
+.nav-link {
+
+    font-size: 2.8vh;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .5);
+    padding-bottom: 3vh;
+}
+
+.nav-link:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    transition: all .6s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    background: white;
+}
+
+.nav-link:hover {
+    color: #f57124;
+    font-weight: 600;
+    transition: all .2s;
+    text-shadow: none
+}
+
+.nav-link:focus {
+    color: #f57124;
+    font-weight: 600;
+}
+
+.active {
+    color: #f57124;
+    font-weight: 600;
+}
+
+
+.gradiente-lg {
+    color: transparent;
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 100s linear infinite;
+    font-size: 15vh;
+    font-weight: 600;
+    font-family: 'Lobster', cursive;
+    text-shadow: 0 0 2vh rgba(255, 255, 255, .5);
+    background-size: 1100%;
+    transition: 0.4s;
+
+}
+
+
+.gradiente-sm-md {
+    color: transparent;
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 100s linear infinite;
+    font-size: 6.5vh;
+    font-weight: 600;
+    font-family: 'Lobster', cursive;
+    text-shadow: 0 0 2vh rgba(255, 255, 255, .5);
+    background-size: 1050%;
+}
+
+.gradiente-lg-afterscroll {
+    color: transparent;
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 100s linear infinite;
+    font-size: 6vh;
+    font-weight: 600;
+    font-family: 'Lobster', cursive;
+    text-shadow: 0 0 2vh rgba(255, 255, 255, .5);
+    background-size: 1100%;
+    transition: 1s;
+
+
+}
+
+.nav-icon {
+    height: 15vh;
+    width: 15vh;
+    transition: 0.4s;
+
+}
+
+.nav-icon-afterscroll {
+    height: 10vh;
+    width: 10vh;
+    transition: 1s;
+
+}
+
+.navbar {
+    display: flex;
+}
+
+@keyframes gradient {
+    from {
+        background-position: 0% 50%;
+    }
+
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+.navbar-toggler {
+    background-color: none;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .5);
+}
+
+.bi-list {
+    color: #f57124;
+}
+
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* MEDAROCKET - QUÉ ES - BODY 1 */
+.body-1 {
+    padding-top: 25vh;
+    background-color: #370665;
+    overflow: hidden;
+    position: relative;
+}
+
+.que-h1 {
+    color: #eb7a39;
+    font-weight: 600;
+    font-size: 6vh;
+}
+
+.que-cohete {
+    height: 60vh;
+}
+
+/* SEPARADOR */
+.separador-1 {
+    background-color: #370665;
+    
+}
+
+/* MEDAROCKET - SE UN ASTRONAUTA - BODY 2 */
+.body-2 {
+    background-color: #eb7a39;
+}
+
+.que-h2 {
+    color: #370665;
+    font-weight: 600;
+    font-size: 6vh;
+}
+
+.botonBody2 {
+    padding: 2vh;
+    background-color: #370665;
+    border: white 1px solid;
+    border-radius: 2vh;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.botonBody2:hover {
+    background-color: #21043b;
+    padding: 2.5vh;
+    transition: .5s;
+
+}
+
+/* MEDAROCKET - Elegir complementos y cohete - BODY 3
+ */
+
+.body-3 {
+    background-color: #31065a;
+}
+
+.carusel {
+    background-image: radial-gradient(circle, #6d09cd, #6109b6, #5608a0, #4a088a, #3f0775, #3a076c, #360663, #31065a, #31065a, #31065a, #31065a, #31065a);
+}
+
+.carousel {
+    width: 75%;
+}
+
+.cohetes {
+    max-width: 100%;
+}
+
+.asteroide {
+    max-width: 100%;
+    width: 80%;
+}
+
+.estrellas {
+    color: rgb(247, 158, 43);
+}
+
+.btnAnadir {
+    padding: 0.5vh;
+    text-decoration: none;
+    background-color: #eb7a39;
+    border: white 1px solid;
+    border-radius: 10px;
+}
+
+.btnAnadir:hover {
+    background-color: #bd5d26;
+}
+
+.que-h3 {
+    font-weight: 800;
+    font-size: 6vh;
+}
+
+/* MEDAROCKET - FOOTER */
+.footer {
+    background-color: #21043b;
+}
